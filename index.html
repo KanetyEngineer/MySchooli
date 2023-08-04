@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="説明文">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <title>MySchool i</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <h1 class="site-title">
+            <a href="index.html"> MySchool <span class="i">i</span> </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="https://www.twitter.com" target="_blank"><img src="./img/twitter.png" rel="noopener noreferrer" alt="Twitter" class="icon"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main -->
+    <div id="main" class="main">
+        <picture>
+            <source media="(max-width: 600px)" srcset="./img/main-sp.jpg">
+            <img src="./img/main-pc.jpg" alt="">
+        </picture>
+    </div>
+
+
+    <!-- about -->
+    <section id="about" class="wrapper">
+        <h2 class="sec-title">About</h2>
+        <div class="sec-main">
+            <ul>
+                <li>MySchool i</li>
+                <li>学生向けの情報共有サイト</li>
+                <li>課題や試験範囲を友人と共有してまとめられる</li>
+                <li>誰でも無料で始められる</li>
+            </ul>
+            <p>みんなが少しずつ持っている情報を集めて学校についての情報を網羅し、忘れ物や提出物の期限超過を防ぎます。<br>簡単に登録できて誰でも無料で利用できます。また、期限などをLINEで通知するように設定もできます。</p>
+        </div>
+    </section>
+
+
+    <!-- service -->
+    <div class="works9"></div>
+    <section id="service" class="wrapper">
+        <h2 class="sec-title">Service</h2>
+        
+            <ul>
+                <li><img src="./img/works1.jpg" alt="works1"></li>
+                <li><img src="./img/works2.jpg" alt="works2"></li>
+                <li><img src="./img/works3.jpg" alt="works3"></li>
+                <li><img src="./img/works4.jpg" alt="works4"></li>
+                <li><img src="./img/works5.jpg" alt="works5"></li>
+                <li><img src="./img/works6.jpg" alt="works6"></li>
+                <li><img src="./img/works3.jpg" alt="works3"></li>
+                <li><img src="./img/works4.jpg" alt="works4"></li>
+                <li><img src="./img/works1.jpg" alt="works1"></li>
+            </ul>
+        
+    </section>
+</div>
+
+    <!-- news -->
+    <section id="news" class="wrapper">
+        <h2 class="sec-title">News</h2>
+        <div class="sec-news">
+            <dl>
+                <dt>2023/08/04</dt>
+                <dd>Sample1</dd>
+                <dt>2023/08/04</dt>
+                <dd>Sample2</dd>
+                <dt>2023/08/04</dt>
+                <dd>Sample3</dd>
+                <dt>2023/08/04</dt>
+                <dd>Sample4</dd>
+            </dl>
+        </div>
+    </section>
+
+
+    <!-- contact -->
+    <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact</h2>
+        <p>お問い合わせは以下のフォームから</p>
+        <form action="#" method="post">
+            <dl>
+                <dt><label for="name">お名前</label></dt>
+                <dd><input type="text" id="name"></dd>
+                <dt><label for="email">メールアドレス</label></dt>
+                <dd><input type="email" id="email"></dd>
+                <dt><label for="content">内容</label></dt>
+                <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
+            </dl>
+            <div class="button"><input type="submit" value="送信"></div>
+    </form>
+    </section>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+    //共通のオプション設定
+    ScrollReveal({
+        reset: false,
+        distance: "60px",
+        duration: 2000, //2sかけてアニメーション
+        delay: 200 /* 0.2s後に発動 */,
+    });
+
+    ScrollReveal().reveal(".main", {
+        delay: 200,
+        origin: "bottom",
+    });
+    
+    ScrollReveal().reveal(".sec-title, .sec-main, works9, sec-news", {
+        delay: 100,
+        origin: "bottom",
+    });
+    
+    // ScrollReveal().reveal(".main", {
+    //     delay: 200,
+    //     origin: "bottom",
+    // });
+    </script>
+
+
+</body>
+</html>
