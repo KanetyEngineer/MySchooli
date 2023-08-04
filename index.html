@@ -38,13 +38,13 @@
 
     <!-- about -->
     <section id="about" class="wrapper">
-        <h2 class="sec-title">About</h2>
+        <h2 class="sec-title sec-title-about">About</h2>
         <div class="sec-main">
             <ul>
-                <li>MySchool i</li>
-                <li>学生向けの情報共有サイト</li>
+                <li class="msi"><b>MySchool <span class="i">i</span></b></li>
+                <li><b id="bold">学生向けの情報共有サイト</b></li>
                 <li>課題や試験範囲を友人と共有してまとめられる</li>
-                <li>誰でも無料で始められる</li>
+                <li>誰でも<b id="bold">無料</b>で始められる</li>
             </ul>
             <p>みんなが少しずつ持っている情報を集めて学校についての情報を網羅し、忘れ物や提出物の期限超過を防ぎます。<br>簡単に登録できて誰でも無料で利用できます。また、期限などをLINEで通知するように設定もできます。</p>
         </div>
@@ -93,15 +93,19 @@
     <section id="contact" class="wrapper">
         <h2 class="sec-title">Contact</h2>
         <p>お問い合わせは以下のフォームから</p>
-        <form action="#" method="post">
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="ddeab6b7-a528-450c-9a4e-95f0cb6cdfcf">
             <dl>
                 <dt><label for="name">お名前</label></dt>
-                <dd><input type="text" id="name"></dd>
+                <dd><input type="text" name="name" id="name" required></dd>
                 <dt><label for="email">メールアドレス</label></dt>
-                <dd><input type="email" id="email"></dd>
+                <dd><input type="text" name="email" id="email" required></dd>
+                <dt><label for="text">件名</label></dt>
+                <dd><input type="text" name="subject" id="subject" required></dd>
                 <dt><label for="content">内容</label></dt>
-                <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
+                <dd><textarea name="message" id="content" cols="30" rows="10" required></textarea></dd>
             </dl>
+            <p class="submit-p">送信に成功すると「{"message":"Email Sent","success":true}」が表示されます。表示されたらブラウザバックしてください。<br>この文が表示されない場合はもう一度送信してください。</p>
             <div class="button"><input type="submit" value="送信"></div>
     </form>
     </section>
