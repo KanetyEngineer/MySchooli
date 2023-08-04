@@ -44,7 +44,11 @@ li {
 .sec-title {
     font-size: 1.5rem;
     text-align: center;
+    margin-top: 80px;
     margin-bottom: 65px;
+}
+.sec-title-about {
+    margin-top: 0;
 }
 
 /* header */
@@ -58,7 +62,7 @@ li {
     height: 170px;
 }
 
-#header span.i {
+span.i {
     color: #e70101;
 }
 
@@ -109,6 +113,11 @@ li {
 
 #about ul li:first-child {
     margin-bottom: 30px;
+}
+
+.msi {
+    font-size: 1.3rem;
+    
 }
 
 /* service */
@@ -188,8 +197,13 @@ li {
     height: 10rem;
 } 
 
+#contact .submit-p {
+    font-size: 12px;
+}
+
 #contact .button {
     text-align: center;
+    margin-bottom: 100px;
 }
 
 #contact .button input {
@@ -260,3 +274,4 @@ li {
         width: 100%;
     }
 }
+
