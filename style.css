@@ -53,13 +53,15 @@ li {
 
 /* header */
 #header {
-    max-width: 960px;
+    /* max-width: 960px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 0;
     padding: 0 4%;
+    width: 100%;
     height: 170px;
+    background: rgb(200, 250, 250);
 }
 
 span.i {
@@ -231,7 +233,7 @@ span.i {
         flex-direction: column;
         height: auto;
         line-height: 40px;
-        margin-top: 20px;
+        padding-top: 20px;
     }
 
     #header li {
